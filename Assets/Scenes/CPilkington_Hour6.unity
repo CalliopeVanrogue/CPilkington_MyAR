@@ -229,8 +229,16 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_JumpSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_WalkSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_SlopeLimit
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -430,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27bfb3ac37fdd9245b729d54e4d8cbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1397945034}
+  gameManager: {fileID: 1397945033}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +778,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1397945032}
   - component: {fileID: 1397945035}
-  - component: {fileID: 1397945034}
   - component: {fileID: 1397945033}
   m_Layer: 0
   m_Name: Game Manager
@@ -808,20 +815,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 106608264}
   player: {fileID: 983448348}
---- !u!114 &1397945034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397945031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dcebb62f0d70b04c903cc326d99e961, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  player: {fileID: 0}
 --- !u!114 &1397945035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,4 +1030,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90391cb9cbc0214986ed0bd9f00b656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1397945034}
+  gameManager: {fileID: 1397945033}
